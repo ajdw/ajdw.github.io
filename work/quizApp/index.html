@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>repl.it</title>
+        <!-- Latest compiled and minified CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+      
+      <br>
+      <br>
+      <br>
+     <div class = "questionaire">
+       <h1 id="quiz-header">Quiz Application</h1>
+        <form> 
+        <!--question 1-->
+        <h3 id ="question0"></h3>
+          <div class="input-group input-group-md col-sm-2 col-sm-offset-5">
+            <span class="input-group-addon">Question 1</span>
+            <input type="text" class="form-control" id ="answer0">
+          </div>
+        <!--question 2-->
+        <h3 id ="question1"></h3>
+          <div class="input-group input-group-md col-sm-2 col-sm-offset-5">
+            <span class="input-group-addon">Question 2</span>
+            <input type="text" class="form-control" id ="answer1">
+          </div>
+        <!--question 3-->
+        <h3 id ="question2"></h3>
+          <div class="input-group input-group-md col-sm-2 col-sm-offset-5">
+            <span class="input-group-addon">Question 3</span>
+            <input type="text" class="form-control" id ="answer2">
+          </div>
+        <!--question 4-->
+        <h3 id ="question3"></h3>
+          <div class="input-group input-group-md col-sm-2 col-sm-offset-5">
+            <span class="input-group-addon">Question 4</span>
+            <input type="text" class="form-control" id ="answer3">
+          </div>
+        <!--question 5-->
+        <h3 id ="question4"></h3>
+          <div class="input-group input-group-md col-sm-2 col-sm-offset-5">
+            <span class="input-group-addon">Question 5</span>
+            <input type="text" class="form-control" id ="answer4">
+          </div>
+        <!--question 6-->
+        <h3 id ="question5"></h3>
+          <div class="input-group input-group-md col-sm-2 col-sm-offset-5">
+            <span class="input-group-addon">Question 6</span>
+            <input type="text" class="form-control" id ="answer5">
+          </div>
+        <!--question 7-->
+        <h3 id ="question6"></h3>
+          <div class="input-group input-group-md col-sm-2 col-sm-offset-5">
+            <span class="input-group-addon">Question 7</span>
+            <input type="text" class="form-control" id ="answer6">
+          </div>
+        <button type = "button" class=" btn btn-danger btn-lg" onclick="testResults()">Submit Answers</button>
+         </form>
+      </div>
+      
+	<div class="col-sm-2 results col-sm-offset-5">
+				<h1 class="correct">Correct: <span id="correct"></span></h1>
+				<h1 class="incorrect">Incorrect:  <span id="incorrect"></span></h1>
+			</div>
+
+
+   <script src="js/main.js"></script>
+    </body>
+</html>

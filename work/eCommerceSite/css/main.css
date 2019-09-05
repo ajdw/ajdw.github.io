@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+  background-color: #f2f2f2;
+  font-family: 'Lato', sans-serif;
+}
+
+#title {
+	font-size: 300%;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	font-family: 'Poiret One', cursive;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.header-pants {
+  font-size: 150%;
+  padding-bottom: 5px;
+  font-weight: bolder;
+}
+
+.pants-box {
+	margin: 10px 0;
+}
+
+h3 {
+	font-size: 120%;
+}
+
+.thumbnail {
+	box-shadow: 2px 2px 5px #888888;
+}
+
+.btn {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	box-shadow: 5px 5px 5px #888888;
+}

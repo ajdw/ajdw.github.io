@@ -1,0 +1,54 @@
+body {
+/*  background-image: url(../img/paper.jpg);*/
+}
+
+h1 {
+  font-family: 'Bitter', sans-serif;
+	text-align: center;
+	color: black;
+  display: inline;
+  margin-left: 20%;
+}
+
+.book-finder {
+  padding-top: 5px;
+}
+
+.navbar {
+  background-color: lightgrey;
+}
+
+div.navbar-header .navbar-brand {
+  padding: 0 15px;
+  margin-top: 3px;
+}
+
+#search input {
+	text-align: center;
+  display: inline-block;
+
+}
+
+.title {
+  font-weight: bold;
+}
+
+#button {
+  font-family: sans-serif;
+}
+
+#results {
+  font-family: sans-serif;
+}
+
+.images {
+  height: 250px;
+  width: 200px;
+  border-radius: 5px;
+  padding-bottom: 15px;
+}
+
+.col-md-4 {
+  text-align: center;
+}
+

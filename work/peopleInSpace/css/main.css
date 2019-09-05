@@ -1,0 +1,102 @@
+body { 
+  background: url("http://chainimage.com/images/earth-from-space-space-jpg.jpg") fixed center no-repeat;
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  letter-spacing: 6px;
+  text-shadow: 2px 2px 4px #000000;
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  margin-top: 80px;
+}
+
+#results {
+  display: none;
+  color: white;
+  font-size: 500%;
+  text-shadow: 2px 2px 4px #000000;
+  background: red;
+  max-width: 75%;
+  padding: 20px 0px;
+  margin-bottom: -32px;
+  margin-left: auto;
+  margin-right: auto;
+  background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#people {
+  display: none;
+  color: white;
+  font-size: 160%;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 900px){
+    #people, #results {
+        max-width: 15%;
+    }
+
+@media only screen and (min-width: 700px){
+    #people, #results {
+        max-width: 55%;
+    }
+}
+
