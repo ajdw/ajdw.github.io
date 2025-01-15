@@ -1,0 +1,3 @@
+[submodule "programming/bottle-collector"]
+	path = programming/bottle-collector
+	url = https://github.com/ajdw/bottle-collector.git
