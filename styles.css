@@ -33,6 +33,13 @@ header {
 #header-number {
 }
 
+#header-email,
+#header-number,
+#header-location {
+    display: block; /* Ensures each line is treated as a block */
+    margin-bottom: 1px; /* Adjust spacing (1-2px) between each line */
+    line-height: 1.5; /* Optional: Adjust line spacing for readability */
+}
 
 /* Language Button */
 .language-btn {
@@ -413,12 +420,13 @@ body {
 #america-button {
     background-color: #007bff;
     color: white;
-    margin-bottom: 10px;
+    font-size: 15px;
 }
 
 #japan-button {
     background-color: #ff0000;
     color: white;
+    font-size: 15px;
 }
 
 .resume-button {
