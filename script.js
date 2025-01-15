@@ -114,3 +114,27 @@ document.getElementById('language-toggle').addEventListener('click', function() 
     const currentLanguage = isJapanese ? 'ja' : 'en';
     setLanguage(currentLanguage);
 });
+
+document.querySelector('.menu-icon').addEventListener('click', function () {
+    document.querySelector('.navbar').classList.toggle('active');
+});
+
+const languageButton = document.getElementById('language-toggle');
+    
+    // Function to toggle language
+    function toggleLanguage() {
+        if (languageButton.textContent === '日本語') {
+            // Change the button for English
+            languageButton.textContent = 'ENG';
+            languageButton.classList.add('eng');
+            languageButton.classList.remove('jp');
+        } else {
+            // Change the button back to Japanese
+            languageButton.textContent = '日本語';
+            languageButton.classList.add('jp');
+            languageButton.classList.remove('eng');
+        }
+    }
+    
+    // Attach the toggle function to the button
+    languageButton.addEventListener('click', toggleLanguage);

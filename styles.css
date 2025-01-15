@@ -1,329 +1,415 @@
-/* General Reset */
-body, h1, p, ul, li, a {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-/* Header styling */
+/* Header Styles */
 header {
     background-color: #333;
     color: white;
     padding: 10px 20px;
-    position: sticky;  /* Makes the header sticky */
-    top: 0;            /* Keeps it at the top when scrolling */
-    z-index: 1000;     /* Ensures the header is above other content */
-}
-
-#header-email {
-    color: #71d5fb; 
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.pdf-container {
+    text-align: center;
     width: 100%;
-    height: 800px; /* Adjust as necessary */
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+.header-content h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.header-content p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Language Button */
+.language-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 10px;
     border: none;
+    cursor: pointer;
 }
 
-.nav-link {
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Adjust spacing between icon and text */
-    text-decoration: none;
+/* Default button style when displaying 日本語 */
+.language-btn {
+    background-color: white;
+    color: red;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.nav-link img {
-    width: 16px; /* Adjust icon size */
-    height: 16px;
+/* Style when displaying English */
+.language-btn.eng {
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
 }
 
-.nav-link i {
-    font-size: 16px; /* Adjust icon size for Font Awesome */
-}
-
-/* Layout container */
+/* Main Container */
 .container {
-    display: flex;
-    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
 }
 
-/* Navigation sidebar */
+/* Navigation Styles */
 nav {
-    width: 200px;
     background-color: #f4f4f4;
-    padding: 20px;
-    position: sticky;  /* Makes the sidebar sticky */
-    top: 0;            /* Keeps it at the top when scrolling */
-    z-index: 900;      /* Ensures the sidebar stays below the header */
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav a {
-    display: block;
     text-decoration: none;
     color: #333;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    transition: background 0.3s;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background-color: #ddd;
+    color: #4CAF50;
 }
 
-/* Main content area */
-main {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    border-left: 1px solid #ccc;
-    overflow-y: auto;
-}
-
-/* Styling for active nav link */
-.nav-link.active {
-    text-decoration: underline;
-    color: green;
-}
-
-
-/* Dropdown Menu Styling */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-toggle {
-    cursor: pointer;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: #f4f4f4;
-    list-style: none;
-    padding: 10px 0;
-    margin: 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    z-index: 1000;
-}
-
-.dropdown-menu li {
-    padding: 5px 20px;
-}
-
-.dropdown-menu li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.dropdown-menu li a:hover {
-    background-color: #ddd;
-}
-
-/* Show dropdown menu on hover */
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-/* Main content area */
-main {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-    border-left: 1px solid #ccc;
-    overflow-y: auto;
-}
-
-/* Responsive grid for dynamic content */
+/* Grid Layout for Tile Cards */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 20px;
+    margin: 20px 0;
 }
 
-/* Portfolio item style */
 .grid-item {
-    padding: 15px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* General styling for the form */
-.contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Form heading and description */
-.contact-form h2 {
-    color: #333;
     text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
     margin-bottom: 10px;
 }
 
-.contact-form p {
-    color: #666;
-    text-align: center;
-    margin-bottom: 20px;
+.title {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-/* Style for the form groups (input fields and textarea) */
-.form-group {
-    margin-bottom: 20px;
+/* Responsive Styles for Tablets and Mobile */
+@media only screen and (max-width: 768px) {
+    /* Adjust Header */
+    header {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-content p {
+        font-size: 0.9rem;
+    }
+
+    /* Grid Layout for Tile Cards */
+    .grid-container {
+        grid-template-columns: 1fr 1fr; /* 2 columns for tablets */
+    }
+
+    .grid-item {
+        padding: 10px;
+    }
+
+    /* Adjust navigation for smaller screens */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust font size for mobile */
+    body {
+        font-size: 14px;
+    }
 }
 
-.form-group label {
-    display: block;
-    font-size: 14px;
-    color: #333;
-    margin-bottom: 5px;
+@media only screen and (max-width: 480px) {
+    /* Grid Layout for Tile Cards */
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column for mobile */
+    }
+
+    .grid-item {
+        padding: 8px;
+    }
+
+    /* Adjust header font */
+    .header-content h1 {
+        font-size: 1.3rem;
+    }
+
+    .header-content p {
+        font-size: 0.8rem;
+    }
+
+    /* Adjust buttons */
+    .language-btn {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
 }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    background-color: #fff;
-    transition: border 0.3s ease;
-}
 
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: #0066cc;
-    outline: none;
-}
-
-/* Style for the submit button */
-.submit-btn {
-    width: 100%;
-    padding: 15px;
-    font-size: 18px;
-    background-color: #0066cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.submit-btn:hover {
-    background-color: #005bb5;
-}
-
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
+/* General portfolio item styling */
 .portfolio-item {
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    text-align: left;
+    align-items: flex-start; /* Align items at the top */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    gap: 20px;
 }
 
-.portfolio-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+/* Image styling */
+.portfolio-item img {
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; /* Ensures image doesn't get distorted */
+    border-radius: 5px;
+    flex-shrink: 0; /* Prevent the image from shrinking */
 }
 
-.company-logo {
-    width: 50px;
-    height: 50px;
-    margin: 15px auto;
-    border-radius: 50%;
-    display: block;
+/* Description section */
+.portfolio-item .description {
+    flex-grow: 1;
 }
 
-.article-photo {
-    width: 100%;
-    height: auto;
-    margin: 15px 0;
-}
-
+/* Description title styling */
 .portfolio-item h3 {
     font-size: 1.2rem;
-    margin: 10px 0;
     color: #333;
 }
 
-.description {
+/* Description text */
+.portfolio-item p {
     font-size: 0.9rem;
     color: #555;
-    padding: 0 10px 20px;
 }
 
-.portfolio-item a {
+/* Link to the .pdf */
+.portfolio-item .description a {
+    color: #007bff;
     text-decoration: none;
-    color: inherit;
-    display: block;
+    font-weight: bold;
 }
 
-.portfolio-item a:hover h3 {
-    color: #007BFF;
+/* Hover effect for the link */
+.portfolio-item .description a:hover {
+    text-decoration: underline;
 }
 
-.article-photo {
-    width: 100%; /* Make the photo span the width of its container */
-    height: 200px; /* Set a fixed height for consistency */
-    object-fit: cover; /* Ensures the photo fills the space while preserving aspect ratio */
-    border-radius: 5px; /* Optional: rounded corners */
+/* Grid for portfolio items */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Make sure it's responsive */
+    gap: 20px;
+    padding: 20px;
 }
 
-/* Basic layout adjustments */
-.header-content {
+/* Align links inline */
+.inline-links {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 15px; /* Controls the space between the links */
 }
 
-.language-btn {
-    margin-right: 15px;
-    padding: 5px 10px;
-    font-size: 14px;
-    cursor: pointer;
+/* Responsive adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+    /* For tablet and smaller devices */
+    .portfolio-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center the items horizontally */
+        padding: 15px; /* Add more padding */
+    }
+
+    .portfolio-item img {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Adjust height automatically */
+        margin-bottom: 15px; /* Add space below image */
+    }
+
+    .portfolio-item .description {
+        text-align: center; /* Center the description text */
+    }
+
+    /* Ensure portfolio grid is responsive */
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* Use a single column for mobile */
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* For very small screens (mobile) */
+    .portfolio-item h3 {
+        font-size: 1rem; /* Adjust title font size */
+    }
+
+    .portfolio-item p {
+        font-size: 0.8rem; /* Adjust paragraph font size */
+    }
+
+    .portfolio-item .description a {
+        font-size: 0.9rem; /* Adjust link font size */
+    }
+}
+
+
+/* General styling for the contact page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form container styling */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Title and description styling */
+.contact-form h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-form p {
+    color: #777;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Label styling */
+.contact-form label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Input field styling */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f4f7fb;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus effect on input fields */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Textarea specific styling */
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Submit button styling */
+.submit-btn {
     background-color: #007bff;
     color: white;
+    font-size: 1.1rem;
+    padding: 12px 20px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
-.language-btn:hover {
+/* Button hover effect */
+.submit-btn:hover {
     background-color: #0056b3;
+}
+
+/* Button focus effect */
+.submit-btn:focus {
+    outline: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+
+    .contact-form h2 {
+        font-size: 1.3rem;
+    }
+
+    .contact-form p {
+        font-size: 0.9rem;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .submit-btn {
+        padding: 10px 15px;
+    }
 }
