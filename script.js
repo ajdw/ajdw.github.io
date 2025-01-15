@@ -135,6 +135,3 @@ const languageButton = document.getElementById('language-toggle');
             languageButton.classList.remove('eng');
         }
     }
-    
-    // Attach the toggle function to the button
-    languageButton.addEventListener('click', toggleLanguage);
