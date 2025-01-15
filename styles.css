@@ -27,6 +27,13 @@ header {
     box-sizing: border-box; /* Ensures padding doesn't overflow */
 }
 
+.playfair-display-font {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .header-content h1 {
     font-size: 1.8rem;
     margin: 0;
@@ -439,7 +446,7 @@ button {
 #america-button {
     background-color: var(--primary-color);
     color: white;
-    font-size: 15px;
+      font-size: 15px;
 }
 #japan-button {
     background-color: var(--secondary-color);
