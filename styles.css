@@ -439,6 +439,7 @@ button {
 #america-button {
     background-color: var(--primary-color);
     color: white;
+    font-size: 15px;
 }
 #japan-button {
     background-color: var(--secondary-color);
