@@ -32,6 +32,7 @@ header {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+  letter-spacing: 1.7px;
 }
 
 .header-content h1 {
