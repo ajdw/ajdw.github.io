@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zodiac Signs App</title>
+	<meta title="Zodiac Signs App">
+	<meta author="Alex Williams">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Coming+Soon|Farsan" rel="stylesheet">
+</head>
+<body>
+<div class = "container">
+  <div class="row row-centered z-form col-sm-12">
+		<h1>Enter Your Zodiac Sign</h1>
+		<!-- We enter a value in   -->
+		<input type="text" placeholder="what's your sign?" id="sign" required>
+		<br>
+		<br>
+		<input type="submit" onclick="getSign()" value="Submit" class="btn btn-lg btn-warning">
+	</div>
+	</div>
+
+<div class="container">
+    <div class="row row-centered">
+	<div class="col-sm-12 col-centered">
+		<img id="icon" src="" class="img-responsive">
+	</div>
+</div>
+</div>
+
+<div class="container z-output">
+    <div class="row row-centered">
+	<div class="col-sm-12 col-centered">
+		<div id="result">
+		</div>
+	</div>
+</div>
+</div>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

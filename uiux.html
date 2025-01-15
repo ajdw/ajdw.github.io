@@ -1,0 +1,117 @@
+<!-- uiux.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Portfolio</title>
+    <style>
+        /* General portfolio item styling */
+        .portfolio-item {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            text-align: left;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        /* Image styling */
+        .portfolio-item img {
+            width: 300px; 
+            height: 300px; 
+            object-fit: cover; /* Ensures image doesn't get distorted */
+            border-radius: 5px;
+        }
+
+        /* Description section */
+        .portfolio-item .description {
+            flex-grow: 1;
+        }
+
+        /* Description title styling */
+        .portfolio-item h3 {
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        /* Description text */
+        .portfolio-item p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        /* Link to the .pdf */
+        .portfolio-item .description a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hover effect for the link */
+        .portfolio-item .description a:hover {
+            text-decoration: underline;
+        }
+
+        /* Grid for portfolio items */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Make sure it's responsive */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Align links inline */
+        .inline-links {
+            display: flex;
+            gap: 15px; /* Controls the space between the links */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 data-en="UI/UX Portfolio" data-ja="UI/UXポートフォリオ">UI/UX Portfolio</h1>
+        <p data-en="Here are examples of my UI/UX designs." data-ja="こちらは私のUI/UXデザインの例です。">Here are examples of my UI/UX designs.</p>
+        <br>
+    </div>
+
+    <div class="portfolio-item">
+        <img src="photos/ui-ux-day-task-app.png" alt="Project Image 1">
+        <div class="description">
+            <h3 data-en="DayTask App" data-ja="DayTaskアプリ">DayTask App</h3>
+            <p data-en="This project involved creating a smartwatch application designed to track a to-do list. The to-do list would be linked to a custom Google or Excel spreadsheet, which would track each task's details, including its start and end times, as well as its category."
+               data-ja="このプロジェクトでは、タスクの詳細（開始時刻、終了時刻、カテゴリなど）を追跡するために、カスタムのGoogleまたはExcelスプレッドシートとリンクされたTODOリストを追跡するためのスマートウォッチアプリケーションを作成しました。">This project involved creating a smartwatch application designed to track a to-do list. The to-do list would be linked to a custom Google or Excel spreadsheet, which would track each task's details, including its start and end times, as well as its category.</p>
+            <br>
+            <p data-en="Tools & Technologies used:" data-ja="使用したツールと技術："><b>Tools & Technologies used:</b></p>
+            <ul data-en="Figma, Google Apps Script, Watch Kit" data-ja="Figma、Google Apps Script、Watch Kit">
+                <li data-en="Figma" data-ja="Figma">Figma</li>
+                <li data-en="Google Apps Script" data-ja="Google Apps Script">Google Apps Script</li>
+                <li data-en="Watch Kit" data-ja="Watch Kit">Watch Kit</li>
+            </ul>
+            <br>
+            <a href="documents/ui-ux-daytask-app.pdf" target="_blank" data-en="View Project PDF" data-ja="プロジェクトPDFを見る">View Project PDF</a>
+        </div>
+    </div>
+    <br>
+
+    <div class="portfolio-item">
+        <img src="photos/ui-ux-care-discover-app.png" alt="Project Image 2">
+        <div class="description">
+            <h3 data-en="Care Discover App" data-ja="Care Discoverアプリ">Care Discover App</h3>
+            <p data-en="The Care Discover App features a map grid system that displays available daycare centers, each marked with a color-coded pin to indicate availability — a crucial factor for new parents seeking childcare. Drawing from personal experience working with a daycare, I found that spot availability is the most frequently asked question from both parents and providers."
+               data-ja="Care Discoverアプリは、利用可能な保育施設を表示するマップグリッドシステムを特徴とし、それぞれの施設には利用可能性を示す色分けされたピンがマークされています。これは、保育所を探している新しい親にとって重要な要素です。私自身、保育所での経験から、スポットの空き状況が親と保育者から最もよく尋ねられる質問だと感じました。">The Care Discover App features a map grid system that displays available daycare centers, each marked with a color-coded pin to indicate availability — a crucial factor for new parents seeking childcare. Drawing from personal experience working with a daycare, I found that spot availability is the most frequently asked question from both parents and providers.</p>
+            <br>
+            <div class="inline-links">
+                <a href="documents/ui-ux-care-discover-app.pdf" target="_blank" data-en="View Project PDF" data-ja="プロジェクトPDFを見る">View Project PDF</a> |
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

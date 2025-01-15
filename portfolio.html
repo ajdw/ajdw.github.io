@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="content">
+        <p>Welcome to my portfolio! Click the links below to explore.</p>
+        <br>
+    </div>
+    <!-- Navigation Links -->
+    <ul>
+        <li><a href="uiux.html" data-page="uiux.html">UI/UX</a></li>
+        <li><a href="writing.html" data-page="writing.html">Writing</a></li>
+        <li><a href="programming.html" data-page="programming.html">Programming</a></li>
+    </ul>
+
+    <!-- Placeholder for dynamic content -->
+
+    <script>
+        // JavaScript to dynamically load content
+        document.addEventListener("DOMContentLoaded", () => {
+            const links = document.querySelectorAll('a[data-page]');
+            const contentDiv = document.getElementById('content');
+
+            links.forEach(link => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent the default page navigation behavior
+
+                    const page = link.getAttribute('data-page'); // Get the page to be loaded
+                    if (page) {
+                        fetch(page) // Use fetch to get the content of the page
+                            .then(response => {
+                                if (!response.ok) {
+                                    throw new Error(`Failed to load ${page}`);
+                                }
+                                return response.text();
+                            })
+                            .then(data => {
+                                contentDiv.innerHTML = data; // Inject the fetched content into the page
+                            })
+                            .catch(error => {
+                                contentDiv.innerHTML = `<p>Error loading page: ${error.message}</p>`; // Handle errors
+                            });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

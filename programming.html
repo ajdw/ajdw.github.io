@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Page</title>
+    <style>
+        /* Grid Layout for .gifs */
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Create columns that adjust based on screen size */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .program-item {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .program-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .program-item h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .program-item a {
+            text-decoration: none;
+            color: inherit; /* Inherit color from surrounding text */
+        }
+    </style>
+</head>
+<body>
+    <h1 data-en="Programming Projects" data-ja="プログラミングプロジェクト">Programming Projects</h1>
+
+    <div class="program-grid">
+        <div class="program-item">
+            <a href="programming/angularApp/">
+                <img src="photos/progamming-angular-js-login.gif" alt="Project 1">
+                <h3>AngularJS Login</h3>
+            </a>
+        </div>
+
+        <div class="program-item">
+            <a href="programming/breakoutGame/">
+                <img src="photos/programming-breakout-game.gif" alt="Project 2">
+                <h3>Breakout Videogame</h3>
+            </a>
+        </div>
+
+        <div class="program-item">
+            <a href="https://web.archive.org/web/20240323224154/https://brownbutterwrestling.com/">
+                <img src="photos/programming-brown-butter-wrestling.gif" alt="Project 3">
+                <h3>Brown Butter Wrestling</h3>
+            </a>
+        </div>
+
+        <div class="program-item">
+            <a href="programming/eCommerceSite/">
+                <img src="photos/programming-ecommerce.gif" alt="Project 4">
+                <h3>E-commerce Website</h3>
+            </a>
+        </div>
+        <div class="program-item">
+            <a href="programming/google-replica/">
+                <img src="photos/programming-google-replica.gif" alt="Project 4">
+                <h3>Google Replica Website</h3>
+            </a>
+        </div>
+        <div class="program-item">
+            <a href="programming/peopleInSpace/">
+                <img src="photos/programming-people-in-space.gif" alt="Project 4">
+                <h3>People Currently In Space App</h3>
+            </a>
+        </div>
+        <div class="program-item">
+            <a href="programming/strict-theme/">
+                <img src="photos/programming-strict-theme.gif" alt="Project 4">
+                <h3>Strict Theme Website</h3>
+            </a>
+        </div>
+        <div class="program-item">
+            <a href="programming/zodiac/">
+                <img src="photos/programming-zodiac-app.gif" alt="Project 4">
+                <h3>Zodiac App</h3>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

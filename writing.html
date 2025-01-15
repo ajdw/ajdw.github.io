@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .portfolio-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 16px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .portfolio-item-thumbnail img {
+    max-width: 100%; /* Ensures the image fits within its container */
+    height: auto;    /* Maintains aspect ratio */
+    display: block;  /* Treats the image as a block element */
+    margin: 0 auto;  /* Centers the image horizontally */
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            justify-content: center; /* Centers the grid content within the container */
+        }
+
+        .portfolio-item {
+            text-align: center; /* Ensures all text inside each item is centered */
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .company-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .company-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .article-photo {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .portfolio-item-thumbnail img {
+    max-width: 200px; 
+    height: auto;     /* Maintain the aspect ratio */
+    display: block;   /* Removes the space below the image */
+    margin: 0 auto;   /* Centers the image */
+}
+
+.portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+    </style>
+</head>
+<body>
+    <h1 style="text-align: left;" data-en="Writing Portfolio" data-ja="ライティングポートフォリオ">Writing Portfolio</h1>
+
+<div class="portfolio-grid">
+    <div class="portfolio-item">
+        <a href="https://mackeeper.com/blog/what-is-phishing/">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-mackeeper.png" alt="Mackeeper Logo">
+            </div>
+            <p class="company-name">Mackeeper</p>
+            <h3>What is Phishing?</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://web.archive.org/web/20231210200703/https://www.pocket-lint.com/best-ereader/">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-pocketlint.png" alt="PocketLint Logo">
+            </div>
+            <p class="company-name">PocketLint</p>
+            <h3>Best Ereaders</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://www.pocket-lint.com/best-tvs-under-300/">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-pocketlint.png" alt="PocketLint Logo">
+            </div>
+            <p class="company-name">PocketLint</p>
+            <h3>Best TVs Under $300</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://www.pocket-lint.com/best-tripod-phone-mount/">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-pocketlint.png" alt="PocketLint Logo">
+            </div>
+            <p class="company-name">PocketLint</p>
+            <h3>Best Tripod Phone Mounts</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://www.pocket-lint.com/best-g-shock-watch/">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-pocketlint.png" alt="PocketLint Logo">
+            </div>
+            <p class="company-name">PocketLint</p>
+            <h3>Best G-Shock Watches</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://www.pocket-lint.com/best-weird-tech/">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-pocketlint.png" alt="PocketLint Logo">
+            </div>
+            <p class="company-name">PocketLint</p>
+            <h3>Best Weird Tech</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://www.pocket-lint.com/best-garmin-fenix-7-straps/">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-pocketlint.png" alt="PocketLint Logo">
+            </div>
+            <p class="company-name">PocketLint</p>
+            <h3>Best Garmin Fenix 7 Straps</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://www.pocket-lint.com/best-bone-conduction-headphones/">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-pocketlint.png" alt="PocketLint Logo">
+            </div>
+            <p class="company-name">PocketLint</p>
+            <h3>Best Bone Conduction Headphones</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://www.pocket-lint.com/best-pc-mouse/">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-pocketlint.png" alt="PocketLint Logo">
+            </div>
+            <p class="company-name">PocketLint</p>
+            <h3>Best PC Mouses</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://web.archive.org/web/20180329042311/https://www.lifewire.com/best-gaming-consoles-4154610">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-lifewire.png" alt="LifeWire Logo">
+            </div>
+            <p class="company-name">LifeWire</p>
+            <h3>Best Gaming Consoles</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://www.lifewire.com/glassie-screen-protector-is-stylish-but-pricey-5112950">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-lifewire.png" alt="LifeWire Logo">
+            </div>
+            <p class="company-name">LifeWire</p>
+            <h3>Glassie Screen Protector: Stylish But Pricey</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://www.lifewire.com/top-charging-cables-androids-4050651">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-lifewire.png" alt="LifeWire Logo">
+            </div>
+            <p class="company-name">LifeWire</p>
+            <h3>Top Charging Cables for Androids</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://web.archive.org/web/20190321051518/https://www.lifewire.com/best-waterproof-phone-cases-4158190">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-lifewire.png" alt="LifeWire Logo">
+            </div>
+            <p class="company-name">LifeWire</p>
+            <h3>Best Waterproof Phone Cases</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://www.lifewire.com/home-audio-systems-guide-for-beginners-4690494">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-lifewire.png" alt="LifeWire Logo">
+            </div>
+            <p class="company-name">LifeWire</p>
+            <h3>Home Audio Systems: Guide for Beginners</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://www.techradar.com/news/television/12-times-movies-and-tv-got-technology-completely-wrong-1298308">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-techradar.png" alt="TechRadar Logo">
+            </div>
+            <p class="company-name">TechRadar</p>
+            <h3>12 Times Movies and TV Got Technology Completely Wrong</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://www.techradar.com/reviews/wearables/hot-watch-edge-1285804/review">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-techradar.png" alt="TechRadar Logo">
+            </div>
+            <p class="company-name">TechRadar</p>
+            <h3>Hot Watch Edge Review</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://www.techradar.com/reviews/wearables/ifit-active-1283530/review">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-techradar.png" alt="TechRadar Logo">
+            </div>
+            <p class="company-name">TechRadar</p>
+            <h3>iFit Active Review</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://www.techradar.com/news/portable-devices/other-devices/what-is-the-cicret-bracelet-wearable-1278393">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-techradar.png" alt="TechRadar Logo">
+            </div>
+            <p class="company-name">TechRadar</p>
+            <h3>What is the Cicret Bracelet?</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://www.techradar.com/reviews/audio-visual/backbeat-fit-1270389/review">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-techradar.png" alt="TechRadar Logo">
+            </div>
+            <p class="company-name">TechRadar</p>
+            <h3>Backbeat Fit Review</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://web.archive.org/web/20140728031300/https://investvine.com/hacker-group-challenges-singapore-government/">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-investvine.png" alt="InvestVine Logo">
+            </div>
+            <p class="company-name">InvestVine</p>
+            <h3>Hacker Group Challenges Singapore Government</h3>
+        </a>
+    </div>
+
+    <div class="portfolio-item">
+        <a href="https://web.archive.org/web/20230528232852/https://investvine.com/sony-playstation-to-hit-asean-markets-in-december/">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-investvine.png" alt="InvestVine Logo">
+            </div>
+            <p class="company-name">InvestVine</p>
+            <h3>Sony PlayStation to Hit ASEAN Markets in December</h3>
+        </a>
+    </div>
+    
+    <div class="portfolio-item">
+        <a href="https://web.archive.org/web/20230331023559/https://investvine.com/us-popstar-keha-gets-show-cancelled-by-malaysian-authorities/">
+            <div class="portfolio-item-thumbnail">
+                <img src="photos/logo-investvine.png" alt="InvestVine Logo">
+            </div>
+            <p class="company-name">InvestVine</p>
+            <h3>Ke$ha’s Show Cancelled by Malaysian Authorities</h3>
+        </a>
+    </div> 
+</div>

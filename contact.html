@@ -1,0 +1,29 @@
+<html>
+<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Contact Me" data-ja="お問い合わせください">Contact Me</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+
+<form action="https://formspree.io/f/xjkklybw" method="POST" class="contact-form">
+    <h2 data-en="Contact Me" data-ja="お問い合わせください">Contact Me</h2>
+    <p data-en="Feel free to reach out with any questions or inquiries. I’ll get back to you as soon as possible!" data-ja="ご質問やお問い合わせがありましたら、お気軽にご連絡ください。できるだけ早くお返事いたします！">Feel free to reach out with any questions or inquiries. I’ll get back to you as soon as possible!</p>
+
+    <div class="form-group">
+        <label for="email" data-en="Your email:" data-ja="メール">Your email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="message" data-en="Your message:" data-ja="メッセージ">Your message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+    </div>
+
+    <button type="submit" class="submit-btn" data-en="Send Message" data-ja="メッセージを送信する">Send Message</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
