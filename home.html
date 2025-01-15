@@ -7,7 +7,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-64XHMQHZ09');
 </script>
     <meta charset="UTF-8">
@@ -15,10 +14,26 @@
     <h1 data-en="Welcome to my website!" data-ja="私のウェブサイトへようこそ">Welcome to my website!</h1>
     <p data-en="⬅️ You can click the links on the left to dynamically change the page automatically" data-ja="⬅️ 左のリンクをクリックすると、ページが自動的に動的に変わります">⬅️ You can click the links on the left to dynamically change the page automatically</p>
     <style>
+@media only screen and (max-width: 768px) {
+    /* Styles for tablets and mobile screens */
+    body {
+        font-size: 14px; /* Adjust font size */
+    }
+    .header {
+        font-size: 20px; /* Resize header */
+    }
+    .container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns for mobile */
+    }
+}
+
         /* Grid Container */
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
             gap: 20px;
             margin: 20px;
         }
@@ -112,12 +127,12 @@
         </div>
         <!-- Company 8 -->
         <div class="grid-item">
-            <a href="hhttps://www.etsy.com/shop/ForestFloorForaging" target="_blank">
+            <a href="https://www.etsy.com/shop/ForestFloorForaging" target="_blank">
                 <img src="photos/logo-forest-floor-foraging.png" alt="Company 6 Logo" class="logo">
                 <div class="title" data-en="Forest Floor Foraging" data-ja="フォレスト・フロア・フォレージング">Forest Floor Foraging</div>
             </a>
         </div>
-        <!-- Company 8 -->
+        <!-- Company 9 -->
         <div class="grid-item">
             <a href="https://web.archive.org/web/20171018132649/https://www.nicee.co/" target="_blank">
                 <img src="photos/logo-nicee.png" alt="Company 6 Logo" class="logo">
