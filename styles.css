@@ -1,10 +1,21 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #ff0000;
+    --background-color: #f4f7fb;
+    --text-color: #333;
+    --font-family: 'Arial', sans-serif;
+}
+
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f7fb; /* Apply general background here */
     box-sizing: border-box;
 }
+
 
 /* Header Styles */
 header {
@@ -70,7 +81,7 @@ header {
 
 /* Navigation Styles */
 nav {
-    background-color: #f4f4f4;
+    background-color: #d5f6e589;
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -417,18 +428,25 @@ body {
     }
 }
 
+button {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
 #america-button {
-    background-color: #007bff;
+    background-color: var(--primary-color);
     color: white;
+}
+#japan-button {
+    background-color: var(--secondary-color);
+    color: white;
+    margin-top: 10px;
     font-size: 15px;
 }
 
-#japan-button {
-    background-color: #ff0000;
-    color: white;
-    font-size: 15px;
-    margin-top: 10px;
-}
 
 .resume-button {
     padding: 14px 24px;
@@ -498,9 +516,7 @@ body {
 
 .footer-bottom {
     text-align: center;
-    margin-top: 30px;
     font-size: 14px;
-    border-top: 1px solid #333;
     padding-top: 10px;
     color: #bbbbbb;
 }
@@ -529,4 +545,20 @@ body {
     padding-top: 5px;
     font-size: 12px; /* Adjust font size for bottom text */
     color: #888; /* Subtle text color */
+}
+
+.grid-container,
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Thumbnail Card Styles */
+.grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures images are properly cropped to fit */
+    border-radius: 5px; /* Add rounded corners for aesthetics */
+    margin-bottom: 10px; /* Space between image and card content */
 }
