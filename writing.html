@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- ===========================================================================
+     WRITING — every published piece, with outlet tiles and filters.
+     Nothing on this page lists pieces by hand: they all come from
+     js/clips.js. Edit the intro text below if you like.
+     =========================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Published Writing | Alex Williams</title>
+  <meta name="description" content="Every published piece by Alex Williams: reviews, features, buying guides and news for TechRadar, Pocket-lint, Lifewire, WebProNews and Investvine, with links.">
+  <link rel="canonical" href="https://ajdw.github.io/writing.html">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-sheet="2 of 3">
+<div class="sheet">
+
+  <header class="masthead">
+    <div class="masthead__top">
+      <a class="masthead__name" href="index.html">Alex Williams</a>
+      <span class="masthead__role">SEO &middot; Content &middot; Analytics</span>
+      <span class="masthead__doc">PORTFOLIO &middot; REV <span data-rev></span> &middot; CHIBA, JP</span>
+    </div>
+    <div class="ruler" aria-hidden="true"></div>
+  </header>
+
+  <nav class="nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="index.html#work">Work</a>
+    <a href="writing.html" aria-current="page">Writing</a>
+    <a href="index.html#services">Services</a>
+    <a href="notes.html">Notes</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+
+  <!-- ===== SECTION: OVERVIEW ============================================ -->
+  <section class="section" id="overview">
+    <header class="section__head">
+      <span class="section__no" data-section-no></span>
+      <h2 class="section__title">Published writing</h2>
+    </header>
+    <div class="split">
+      <div>
+        <p class="lede"><span data-writing-total></span> published pieces across <span data-writing-outlets></span> outlets, <span data-writing-years></span>.</p>
+        <!-- EDIT: your own framing for the body of work. -->
+        <p>
+          Reviews and features for TechRadar, buying guides for Pocket-lint and
+          Lifewire, and news reporting for WebProNews and Investvine: years of
+          writing to deadline, to an editor&rsquo;s brief, and for search.
+        </p>
+        <p class="muted small">
+          Outlets restructure and retire old pages. Where an original link is
+          gone, it opens a saved copy on the Internet Archive&rsquo;s Wayback
+          Machine, marked ARCHIVED.
+        </p>
+      </div>
+      <div data-render="writing-stats"></div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION: SELECTED ============================================
+       Pieces with  featured: true  in js/clips.js.
+       ==================================================================== -->
+  <section class="section" id="selected">
+    <header class="section__head">
+      <span class="section__no" data-section-no></span>
+      <h2 class="section__title">Selected writing</h2>
+      <span class="section__aside">Start here</span>
+    </header>
+    <div data-render="writing-featured"></div>
+  </section>
+
+  <!-- ===== SECTION: OUTLETS ============================================= -->
+  <section class="section" id="outlets">
+    <header class="section__head">
+      <span class="section__no" data-section-no></span>
+      <h2 class="section__title">Outlets</h2>
+      <span class="section__aside">Click an outlet to filter the archive</span>
+    </header>
+    <div data-render="writing-pubs"></div>
+  </section>
+
+  <!-- ===== SECTION: FULL ARCHIVE ======================================== -->
+  <section class="section" id="archive">
+    <header class="section__head">
+      <span class="section__no" data-section-no></span>
+      <h2 class="section__title">Full archive</h2>
+      <span class="section__aside">Every piece, with links</span>
+    </header>
+    <div data-render="writing-archive"></div>
+  </section>
+
+  <footer class="titleblock">
+    <div class="tb"><span class="tb__k">Drawn by</span><span class="tb__v">Alex Williams</span></div>
+    <div class="tb"><span class="tb__k">Location</span><span class="tb__v">Chiba, Japan</span></div>
+    <div class="tb"><span class="tb__k">Revision</span><span class="tb__v" data-rev></span></div>
+    <div class="tb"><span class="tb__k">Sheet</span><span class="tb__v" data-sheet-no></span></div>
+    <div class="tb tb--wide"><span class="tb__k">Notes</span><span class="tb__v">&copy; <span data-year></span> &middot; Set in sans &middot; Built by hand &middot; No trackers</span></div>
+  </footer>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/clips.js"></script>
+<script src="js/render.js"></script>
+<script src="js/writing.js"></script>
+</body>
+</html>

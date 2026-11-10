@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- ===========================================================================
+     HOMEPAGE
+     ---------------------------------------------------------------------------
+     WHERE TO EDIT WHAT
+       · Overview text, facts, "How I work" .... SECTION: OVERVIEW below
+       · Contact text + facts .................. SECTION: CONTACT below
+       · Work cards, Services table, Latest .... NOT here: edit js/data.js
+       · Email + LinkedIn ...................... js/data.js → site
+     Section numbers (01, 02 …) fill themselves in. Add a section by copying
+     any <section> block, including its <header class="section__head">.
+     =========================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Williams | SEO, Content &amp; Analytics</title>
+  <meta name="description" content="Alex Williams: websites, SEO and data analysis for small businesses, plus published writing and curriculum work. Based in Chiba, Japan; working remotely.">
+  <link rel="canonical" href="https://ajdw.github.io/">
+  <meta property="og:url" content="https://ajdw.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alex Williams | SEO, Content &amp; Analytics">
+  <meta property="og:description" content="Websites, SEO and data analysis for small businesses, written up so you can act on it.">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alex Williams",
+    "jobTitle": "SEO, content and analytics",
+    "homeLocation": { "@type": "Place", "name": "Chiba, Japan" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "San José State University" },
+    "url": "https://ajdw.github.io/",
+    "sameAs": ["https://www.linkedin.com/in/alexjdwilliams"]
+  }
+  </script>
+</head>
+<body data-sheet="1 of 3">
+<div class="sheet">
+
+  <!-- ===== MASTHEAD ===================================================== -->
+  <header class="masthead">
+    <div class="masthead__top">
+      <a class="masthead__name" href="index.html">Alex Williams</a>
+      <span class="masthead__role">SEO &middot; Content &middot; Analytics</span>
+      <span class="masthead__doc">PORTFOLIO &middot; REV <span data-rev></span> &middot; CHIBA, JP</span>
+    </div>
+    <div class="ruler" aria-hidden="true"></div>
+  </header>
+
+  <!-- ===== NAV ==========================================================
+       Copy this block into every new page and move aria-current="page"
+       to that page's link. That's what draws the red dot.
+       ==================================================================== -->
+  <nav class="nav" aria-label="Main">
+    <a href="index.html" aria-current="page">Home</a>
+    <a href="#work">Work</a>
+    <a href="writing.html">Writing</a>
+    <a href="#services">Services</a>
+    <a href="notes.html">Notes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ===== SECTION: OVERVIEW ============================================ -->
+  <section class="section" id="overview">
+    <header class="section__head">
+      <span class="section__no" data-section-no></span>
+      <h2 class="section__title">Overview</h2>
+    </header>
+
+    <div class="split">
+      <div>
+        <!-- EDIT: your one-line positioning statement. -->
+        <p class="lede">Websites, SEO and data analysis for small businesses, written up so you can act on it.</p>
+
+        <blockquote class="definition">
+          <em>Analysis</em>: finding the number that should change what you do
+          next, and saying plainly what the data can&rsquo;t tell you.
+        </blockquote>
+
+        <p>
+          I&rsquo;ve written professionally since 2010, with bylines at TechRadar,
+          Pocket-lint, WebProNews, Lifewire (About.com) and Investvine, and I&rsquo;ve
+          done SEO for most of that time. At Redfin (2018&ndash;2023) I built the
+          customer reports lead agents worked from.
+        </p>
+        <p>
+          Today I look after the websites, search listings and analytics for two
+          small businesses, and I teach and redesign English curriculum online
+          from Chiba, Japan.
+        </p>
+
+        <p class="actions">
+          <a class="btn btn--primary" href="#work">See the work &rarr;</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </p>
+      </div>
+
+      <div>
+        <!-- COMPONENT: FACT SHEET — copy a <tr> to add a row. -->
+        <table class="table table--spec">
+          <tbody>
+            <tr><th scope="row">Based in</th><td>Chiba, Japan (JST, UTC+9)</td></tr>
+            <tr><th scope="row">Works</th><td>Remotely; async-friendly</td></tr>
+            <tr><th scope="row">Education</th><td>B.S. Information Science &amp; Data Analytics, San Jos&eacute; State University (cum laude, 2025)</td></tr>
+            <tr><th scope="row">Tools</th><td>SQL, Python (matplotlib, seaborn, Plotly), Excel, Wix, Search Console, Google Analytics, Merchant Center, HTML/CSS/JS</td></tr>
+            <tr><th scope="row">Open to</th><td>Full-time roles, contracts and freelance projects</td></tr>
+          </tbody>
+        </table>
+
+        <!-- EDIT: these are drafts. Keep the ones that are true for you. -->
+        <h3 class="subhead">How I work</h3>
+        <ul class="list-panel">
+          <li>Start from the number that matters (sales, sign-ups, enrollments), not the deliverable.</li>
+          <li>Plain words beat precise-sounding ones.</li>
+          <li>Say what the data can&rsquo;t support, not just what it can.</li>
+          <li>Change one thing, measure it, then change the next.</li>
+          <li>Write it so it survives being skimmed.</li>
+          <li>Hand over something the client can run without me.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION: WORK ================================================
+       Cards and filter buttons are generated from js/data.js → projects.
+       ==================================================================== -->
+  <section class="section" id="work">
+    <header class="section__head">
+      <span class="section__no" data-section-no></span>
+      <h2 class="section__title">Work</h2>
+      <span class="section__aside">Filter by category</span>
+    </header>
+
+    <div data-render="filters"></div>
+    <div data-render="projects"></div>
+
+    <!-- Pointer to the full writing archive (writing.html). -->
+    <div class="callout">
+      <p><span class="tag" style="background:#ececec">WRITING</span>&nbsp; <strong>300+ published pieces</strong> for TechRadar, Pocket-lint, Lifewire, WebProNews and Investvine, all linked.</p>
+      <a class="btn btn--primary" href="writing.html">See all published writing &rarr;</a>
+    </div>
+  </section>
+
+  <!-- ===== SECTION: SERVICES ============================================
+       Table generated from js/data.js → services.
+       ==================================================================== -->
+  <section class="section" id="services">
+    <header class="section__head">
+      <span class="section__no" data-section-no></span>
+      <h2 class="section__title">Services</h2>
+      <span class="section__aside">What I can be hired to do, on one page</span>
+    </header>
+
+    <div data-render="services"></div>
+  </section>
+
+  <!-- ===== SECTION: LATEST ==============================================
+       DO NOT EDIT ITEMS HERE. Generated from js/data.js → latest + notes.
+       ==================================================================== -->
+  <section class="section" id="latest">
+    <header class="section__head">
+      <span class="section__no" data-section-no></span>
+      <h2 class="section__title">Latest: what I&rsquo;ve been working on</h2>
+    </header>
+
+    <div data-render="latest"></div>
+    <p class="actions"><a class="btn" href="notes.html">Full log &amp; notes &rarr;</a></p>
+  </section>
+
+  <!-- ===== SECTION: CONTACT ============================================= -->
+  <section class="section" id="contact">
+    <header class="section__head">
+      <span class="section__no" data-section-no></span>
+      <h2 class="section__title">Contact</h2>
+    </header>
+
+    <div class="split">
+      <div>
+        <p>
+          Email is best. Tell me the outcome you need and the deadline, and
+          I&rsquo;ll tell you straight whether I&rsquo;m the right fit.
+        </p>
+        <p class="actions">
+          <!-- The address comes from js/data.js → site.email -->
+          <a class="btn btn--primary" data-email href="#">Email</a>
+          <a class="btn" data-linkedin href="#" target="_blank" rel="noopener">LinkedIn &rarr;</a>
+        </p>
+      </div>
+      <div>
+        <table class="table table--spec">
+          <tbody>
+            <tr><th scope="row">Location</th><td>Chiba, Japan (JST, UTC+9)</td></tr>
+            <tr><th scope="row">Arrangement</th><td>Remote</td></tr>
+            <tr><th scope="row">Availability</th><td>Open to full-time and contract</td></tr>
+            <tr><th scope="row">R&eacute;sum&eacute;</th><td>On request</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER: TITLE BLOCK ========================================== -->
+  <footer class="titleblock">
+    <div class="tb"><span class="tb__k">Drawn by</span><span class="tb__v">Alex Williams</span></div>
+    <div class="tb"><span class="tb__k">Location</span><span class="tb__v">Chiba, Japan</span></div>
+    <div class="tb"><span class="tb__k">Revision</span><span class="tb__v" data-rev></span></div>
+    <div class="tb"><span class="tb__k">Sheet</span><span class="tb__v" data-sheet-no></span></div>
+    <div class="tb tb--wide"><span class="tb__k">Notes</span><span class="tb__v">&copy; <span data-year></span> &middot; Set in sans &middot; Built by hand &middot; No trackers</span></div>
+  </footer>
+
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/render.js"></script>
+</body>
+</html>
